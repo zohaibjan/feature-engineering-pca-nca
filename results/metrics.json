@@ -1,0 +1,438 @@
+{
+  "dataset": "sklearn Wine (UCI Wine recognition)",
+  "seed": 42,
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "train_indices": [
+    8,
+    104,
+    36,
+    78,
+    2,
+    172,
+    125,
+    12,
+    27,
+    146,
+    16,
+    109,
+    90,
+    72,
+    117,
+    116,
+    31,
+    30,
+    97,
+    115,
+    113,
+    79,
+    53,
+    13,
+    25,
+    82,
+    86,
+    11,
+    61,
+    137,
+    123,
+    50,
+    171,
+    85,
+    65,
+    91,
+    158,
+    101,
+    47,
+    167,
+    160,
+    45,
+    174,
+    161,
+    124,
+    9,
+    95,
+    57,
+    32,
+    21,
+    24,
+    33,
+    44,
+    119,
+    15,
+    26,
+    59,
+    136,
+    131,
+    4,
+    163,
+    43,
+    41,
+    1,
+    168,
+    70,
+    114,
+    75,
+    68,
+    52,
+    74,
+    19,
+    157,
+    152,
+    142,
+    110,
+    17,
+    49,
+    107,
+    69,
+    170,
+    37,
+    6,
+    165,
+    67,
+    103,
+    77,
+    73,
+    88,
+    175,
+    127,
+    133,
+    120,
+    149,
+    54,
+    0,
+    162,
+    122,
+    80,
+    89,
+    151,
+    135,
+    144,
+    83,
+    99,
+    141,
+    169,
+    5,
+    29,
+    3,
+    153,
+    106,
+    148,
+    139,
+    96,
+    145,
+    81,
+    92,
+    56,
+    140,
+    111,
+    126,
+    55,
+    46,
+    147,
+    71,
+    128,
+    40,
+    63,
+    150,
+    34,
+    154,
+    159
+  ],
+  "test_indices": [
+    35,
+    93,
+    7,
+    28,
+    87,
+    42,
+    18,
+    60,
+    98,
+    130,
+    62,
+    102,
+    155,
+    156,
+    20,
+    121,
+    64,
+    22,
+    51,
+    177,
+    143,
+    164,
+    23,
+    48,
+    118,
+    84,
+    10,
+    66,
+    38,
+    94,
+    39,
+    132,
+    100,
+    138,
+    173,
+    108,
+    58,
+    176,
+    134,
+    105,
+    166,
+    112,
+    14,
+    129,
+    76
+  ],
+  "selected_by_training_cv": "pca",
+  "results": {
+    "baseline": {
+      "cv_macro_f1": 0.9628432125538389,
+      "cv_std": 0.010123745455918763,
+      "test_accuracy": 0.9777777777777777,
+      "test_macro_f1": 0.9771428571428572,
+      "test_roc_auc_ovr": 0.9984723781020076,
+      "search_seconds": 0.059668724999937695,
+      "best_params": {
+        "classifier__n_neighbors": 7
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          17,
+          1
+        ],
+        [
+          0,
+          0,
+          12
+        ]
+      ],
+      "classification_report": {
+        "class_0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "class_1": {
+          "precision": 1.0,
+          "recall": 0.9444444444444444,
+          "f1-score": 0.9714285714285714,
+          "support": 18.0
+        },
+        "class_2": {
+          "precision": 0.9230769230769231,
+          "recall": 1.0,
+          "f1-score": 0.96,
+          "support": 12.0
+        },
+        "accuracy": 0.9777777777777777,
+        "macro avg": {
+          "precision": 0.9743589743589745,
+          "recall": 0.9814814814814815,
+          "f1-score": 0.9771428571428572,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.9794871794871796,
+          "recall": 0.9777777777777777,
+          "f1-score": 0.9779047619047617,
+          "support": 45.0
+        }
+      }
+    },
+    "pca": {
+      "cv_macro_f1": 0.9854353784524563,
+      "cv_std": 0.020597485323367738,
+      "test_accuracy": 0.9555555555555556,
+      "test_macro_f1": 0.9537037037037037,
+      "test_roc_auc_ovr": 0.998129442573887,
+      "search_seconds": 0.09493461800002478,
+      "best_params": {
+        "classifier__n_neighbors": 7,
+        "pca__n_components": 6
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          17,
+          1
+        ],
+        [
+          0,
+          1,
+          11
+        ]
+      ],
+      "classification_report": {
+        "class_0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "class_1": {
+          "precision": 0.9444444444444444,
+          "recall": 0.9444444444444444,
+          "f1-score": 0.9444444444444444,
+          "support": 18.0
+        },
+        "class_2": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9166666666666666,
+          "support": 12.0
+        },
+        "accuracy": 0.9555555555555556,
+        "macro avg": {
+          "precision": 0.9537037037037037,
+          "recall": 0.9537037037037037,
+          "f1-score": 0.9537037037037037,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.9555555555555556,
+          "recall": 0.9555555555555556,
+          "f1-score": 0.9555555555555556,
+          "support": 45.0
+        }
+      }
+    },
+    "nca": {
+      "cv_macro_f1": 0.9714781248956478,
+      "cv_std": 0.010728426532770244,
+      "test_accuracy": 1.0,
+      "test_macro_f1": 1.0,
+      "test_roc_auc_ovr": 1.0,
+      "search_seconds": 0.22326338400000623,
+      "best_params": {
+        "classifier__n_neighbors": 7,
+        "nca__n_components": 6
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          12
+        ]
+      ],
+      "classification_report": {
+        "class_0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "class_1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "class_2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        }
+      }
+    },
+    "pca_nca": {
+      "cv_macro_f1": 0.9715040802109768,
+      "cv_std": 0.02684553619280165,
+      "test_accuracy": 0.9777777777777777,
+      "test_macro_f1": 0.9764982373678026,
+      "test_roc_auc_ovr": 0.9788315251278216,
+      "search_seconds": 0.22847098099998675,
+      "best_params": {
+        "classifier__n_neighbors": 3,
+        "nca__n_components": 2
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          1,
+          11
+        ]
+      ],
+      "classification_report": {
+        "class_0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "class_1": {
+          "precision": 0.9473684210526315,
+          "recall": 1.0,
+          "f1-score": 0.972972972972973,
+          "support": 18.0
+        },
+        "class_2": {
+          "precision": 1.0,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9565217391304348,
+          "support": 12.0
+        },
+        "accuracy": 0.9777777777777777,
+        "macro avg": {
+          "precision": 0.9824561403508771,
+          "recall": 0.9722222222222222,
+          "f1-score": 0.9764982373678026,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.9789473684210527,
+          "recall": 0.9777777777777777,
+          "f1-score": 0.9775949862906386,
+          "support": 45.0
+        }
+      }
+    }
+  }
+}
