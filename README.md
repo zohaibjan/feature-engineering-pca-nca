@@ -73,3 +73,7 @@ The bundled scikit-learn loader provides 178 samples, 13 continuous chemical mea
 - [Scikit-learn NCA](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.NeighborhoodComponentsAnalysis.html).
 - [Scikit-learn PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html).
 - [MATLAB NCA feature selection](https://www.mathworks.com/help/stats/fscnca.html).
+
+## Historical NCA implementation
+
+The [original July 2020 MATLAB training source](https://github.com/zohaibjan/ensemble_optimised_PSO_GA_MOEA/blob/0758eaa810d0b9ba521d5df27356e324c753b841/runTraining.m) contains an explicit `fscnca` feature-selection implementation. This verifies that NCA was part of the earlier research code, beyond a configuration flag. Its threshold used held-out test loss; the current training-only replacement removes that evaluation leakage. This source evidence does not identify a specific client dataset or establish historical PCA use.
